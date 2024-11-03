@@ -2,13 +2,11 @@
 
 These are microservices for automating everyday tasks, written in TypeScript/Node.js and deployed to [ZEIT](https://zeit.co).
 
-**Endpoint:** [services.anandchowdhary.now.sh/api](https://services.anandchowdhary.now.sh/api/)
-
 ## ⭐ Endpoints
 
 ### `/wikipedia-summary`
 
-Returns the introductory text for a search term. [Try it →](https://services.anandchowdhary.now.sh/api/wikipedia-summary?q=GitHub)
+Returns the introductory text for a search term. 
 
 | Query param | Description               | Example     |
 | ----------- | ------------------------- | ----------- |
@@ -19,7 +17,7 @@ Returns the introductory text for a search term. [Try it →](https://services.a
 
 ### `/github-contributors`
 
-Returns an SVG image with profile pictures of contributors of a repository on GitHub. [Try it →](https://services.anandchowdhary.now.sh/api/github-contributors?repo=elninotech/uppload)
+Returns an SVG image with profile pictures of contributors of a repository on GitHub. 
 
 | Query param    | Description                        | Example            |
 | -------------- | ---------------------------------- | ------------------ |
@@ -29,11 +27,9 @@ Returns an SVG image with profile pictures of contributors of a repository on Gi
 | `padding`      | Padding between pictures in pixels | 5                  |
 | `cacheAge`     | Seconds to cache for               | 86400              |
 
-![Contributors](https://services.anandchowdhary.now.sh/api/github-contributors?repo=elninotech/uppload)
-
 ### `/github-members`
 
-Returns an SVG image with profile pictures of members of a repository on GitHub. [Try it →](https://services.anandchowdhary.now.sh/api/github-members?org=elninotech)
+Returns an SVG image with profile pictures of members of a repository on GitHub.
 
 | Query param    | Description                        | Example    |
 | -------------- | ---------------------------------- | ---------- |
@@ -46,9 +42,7 @@ Returns an SVG image with profile pictures of members of a repository on GitHub.
 
 ### `/github-files`
 
-Returns a [Shields.io schema](https://shields.io/endpoint) for a badge with the number of files in a GitHub repository's directory. [Try it →](https://services.anandchowdhary.now.sh/api/github-files?repo=elninotech/uppload&path=src/i18n&subtract=1&label=i18n&message=%241%24%20language%24S%24&color=blueviolet)
-
-![Badge example](https://img.shields.io/endpoint?url=https%3A%2F%2Fservices.anandchowdhary.now.sh%2Fapi%2Fgithub-files%3Frepo%3Delninotech%2Fuppload%26path%3Dsrc%2Fi18n%26subtract%3D1%26label%3Di18n%26message%3D%25241%2524%2520language%2524S%2524%26color%3Dblueviolet)
+Returns a [Shields.io schema](https://shields.io/endpoint) for a badge with the number of files in a GitHub repository's directory.
 
 | Query param            | Description                   | Example            |
 | ---------------------- | ----------------------------- | ------------------ |
@@ -90,8 +84,8 @@ Several secret keys are required to run these services, particularly my private 
 
 - Locally, they are available in the `.env` file.
 - On Now, they come from `now.json` using Now Secrets
-- As backup, the are available in this repo in [`secrets.gpg`](./secrets.gpg), using the public key [`public.asc`](./public.asc) (also [on OpenPGP](https://keys.openpgp.org/search?q=mail%40anandchowdhary.com))
+- As backup, the are available in this repo in [`secrets.gpg`](./secrets.gpg), using the public key [`public.asc`](./public.asc)
 
 ## 📄 License
 
-[MIT](https://github.com/AnandChowdhary/services/blob/master/LICENSE) © [SmilyBull](https://github.com/devguy4u)
+[MIT](https://github.com/devguy4u/services/blob/master/LICENSE) © [SmilyBull](https://github.com/devguy4u)
