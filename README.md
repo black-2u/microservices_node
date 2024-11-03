@@ -43,7 +43,6 @@ Returns an SVG image with profile pictures of members of a repository on GitHub.
 | `padding`      | Padding between pictures in pixels | 5          |
 | `cacheAge`     | Seconds to cache for               | 86400      |
 
-![Contributors](https://services.anandchowdhary.now.sh/api/github-members?org=elninotech)
 
 ### `/github-files`
 
@@ -95,4 +94,4 @@ Several secret keys are required to run these services, particularly my private 
 
 ## 📄 License
 
-[MIT](https://github.com/AnandChowdhary/services/blob/master/LICENSE) © [Anand Chowdhary](https://anandchowdhary.com)
+[MIT](https://github.com/AnandChowdhary/services/blob/master/LICENSE) © [SmilyBull](https://github.com/devguy4u)
